@@ -10,13 +10,14 @@ import Button from './Button';
 import LoadingButton from './LoadingButton';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
+import TimePicker from './TimePicker';
 
 const store = new Store({
   isLoading: false,
 });
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
-
+storiesOf('Timepicker', module).add('Timepicker', () => <TimePicker />);
 storiesOf('Button', module)
   .addDecorator(StateDecorator(store))
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)

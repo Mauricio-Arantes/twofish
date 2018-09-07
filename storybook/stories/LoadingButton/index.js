@@ -100,13 +100,13 @@ LoadingButton.defaultProps = {
   activityIndicatorColor: colors.borderwhite,
   activityIndicatorSize: 'small',
   viewStyle: {
-    width: wp(50),
+    width: wp(40),
     height: hp(5.5),
     backgroundColor: colors.pink,
     borderRadius: fp(0.5),
   },
   animationDelay: 200,
-  whenAnimationViewWidth: wp(50),
+  whenAnimationViewWidth: wp(40),
   enableWidthAnimation: true,
 };
 
